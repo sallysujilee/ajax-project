@@ -10,11 +10,51 @@
   <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
+  <script>
+    function ajaxRequest() {
+      var xhr = new XMLHttpRequest();
+      xhr.open('GET', 'https://valorant-api.com/v1/weapons');
+      xhr.responseType = 'json';
+      xhr.addEventListener('load', function () {
+        console.log(xhr.status);
+        console.log(xhr.response);
+      });
+      xhr.send();
+    }
+
+    ajaxRequest();
+  </script>
   <header>
+    <a class="logo">
+      <img class="logo" src="images/logo.png" alt="logo">
+    </a>
+    <div class="taskbar-title">Valorant Gun Roulette</div>
   </header>
   <main>
+    <div class="task-buttons">
+      <button class="task-weapons">Weapons</button>
+      <button class="task-weapons-roulette">Weapons Roulette</button>
+      <button class="task-favorites">Favorites</button>
+    </div>
+    <div class="background-overlay"></div>
+    <div class="homepage-container">
+      <div class="border-round">
+        <div class="welcome-title">
+          <h1>Welcome to the Valorant Gun Roulette</h1>
+        </div>
+        <div class="welcome-paragraph">
+          <p>Are you a smurf who needs help choosing which gun to troll with? Are you someone who wants to make a gun list for situational plays? Utilize this site to help you enjoy your Valorant games.</p>
+        </div>
+      </div>
+      <div class="sage-img">
+        <img class="sage" src="images/sage.webp" alt="sage">
+      </div>
+    </div>
   </main>
   <script src="js/data.js"></script>
   <script src="js/main.js"></script>
 </body>
 </html>
+
+<!-- set header to class; display-flex when targetting header; img + div = siblings; put color of taskbar to header
+make logo img into anchor <a></a> wrpa img in anchor tag -->
