@@ -1,0 +1,23 @@
+.taskbar-title {
+  background-color: #ff5152;
+  color: white;
+}
+
+.task-weapons,
+.task-weapons-roulette,
+.task-favorites {
+  color: white;
+  font-size: large;
+  border: none;
+  background: none;
+  margin-left: 40px;
+  margin-top: 5px;
+}
+
+.welcome-title {
+  color: white;
+}
+
+.welcome-paragraph {
+  color: white;
+}
