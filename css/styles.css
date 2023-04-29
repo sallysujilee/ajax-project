@@ -21,3 +21,26 @@
 .welcome-paragraph {
   color: white;
 }
+
+.gun-name {
+  color: white;
+  font-size: 150%;
+  text-align: center;
+}
+
+.filter-by {
+  color: white;
+  margin-right: 1rem;
+}
+
+.fa-star {
+  color: white;
+  font-size: 1.25rem;
+  margin: 10px 8px;
+  cursor: pointer;
+}
+
+.fa-star.favorited {
+  color: gold;
+  cursor: pointer;
+}
