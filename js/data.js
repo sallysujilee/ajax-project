@@ -1,5 +1,5 @@
 /* exported data */
-var data = {
+var dataAPI = {
   view: 'entry-form',
   entries: [],
   editing: null,
@@ -8,9 +8,9 @@ var data = {
 };
 
 window.addEventListener('beforeunload', function () {
-  localStorage.setItem('data', JSON.stringify(data));
+  localStorage.setItem('data', JSON.stringify(dataAPI));
 });
 
 if (localStorage.getItem('data')) {
-  data = JSON.parse(localStorage.getItem('data'));
+  dataAPI = JSON.parse(localStorage.getItem('data'));
 }
